@@ -48,6 +48,7 @@ import {
   TemplateRef,
   ViewChild,
   ElementRef,
+  NO_ERRORS_SCHEMA,
 } from '@angular/core';
 
 export const CONTROL_VALUE_ACCESSOR: any = {
@@ -66,7 +67,7 @@ export const VALIDATOR: any = {
   selector: 'ngx-report-builder',
   templateUrl: './ngx-report-builder.component.html',
   styleUrls: ['./ngx-report-builder.component.scss'],
-  providers: [CONTROL_VALUE_ACCESSOR, VALIDATOR],
+  providers: [CONTROL_VALUE_ACCESSOR, VALIDATOR, NO_ERRORS_SCHEMA ],
 })
 export class NgxReportBuilderComponent
   implements OnInit, OnChanges, ControlValueAccessor, Validator

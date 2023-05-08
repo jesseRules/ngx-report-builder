@@ -32,7 +32,16 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports: [
-    NgxReportBuilderComponent
+    NgxReportBuilderComponent,
+    QueryInputDirective,
+    QueryOperatorDirective,
+    QueryFieldDirective,
+    QueryEntityDirective,
+    QueryButtonGroupDirective,
+    QuerySwitchGroupDirective,
+    QueryRemoveButtonDirective,
+    QueryEmptyWarningDirective,
+    QueryArrowIconDirective
   ]
 })
 export class NgxReportBuilderModule { }
